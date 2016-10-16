@@ -1,0 +1,730 @@
+/* this code resets css styles for all elements*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+---------------------------------------------
+Common styles
+---------------------------------------------
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1280px;
+	margin: 0 auto;
+	font: 300 18px/24px 'Source Sans Pro', sans-serif;
+	color: #636363;
+	padding-top: 25px;
+}
+
+.button {
+	color: #fff;
+	background-color: #ea5480;
+	border-radius: 10px;
+	padding: 6px 15px;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.button.large {
+	font-size: 18px;
+	padding: 8px 20px;
+}
+
+a.button:hover {
+	color: #fff;
+	background-color: rgba(163,58,89,1);
+	background-color: #ff5c8d;
+}
+
+.box {
+	padding: 40px 400px 40px 360px;
+}
+
+.title {
+	height: 120px;
+	background-color: #ea5480;
+	color: #fff;
+	font-size: 44px;
+	font-family: 'Arima Madurai', cursive;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.emphasize {
+	font-weight: 400;
+}
+
+/* 
+---------------------------------------------
+Clear-fix
+---------------------------------------------
+*/
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+---------------------------------------------
+Grid
+---------------------------------------------
+*/
+
+.col-1-2 {
+	width: 50%;
+	float: left;
+}
+
+.col-1-3 {
+	width: 33.33%;
+	float: left;
+}
+
+/* 
+---------------------------------------------
+Typography
+---------------------------------------------
+*/
+
+h1 {
+	font: 400 36px/48px 'Arima Madurai', cursive;
+	color: #ea5480;
+	padding: 10px;
+	text-align: center;
+}
+
+h2 {
+	font: 400 34px/44px 'Arima Madurai', cursive;
+	color: #ea5480;
+	padding: 10px 0;
+}
+
+h3 {
+	font: 400 26px/32px 'Arima Madurai', cursive;
+	color: #ea5480;
+	padding: 10px;
+}
+
+h4 {
+	font: 400 24px/28px 'Arima Madurai', cursive;
+	color: #000;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+h5 {
+	font: 400 20px/24px 'Arima Madurai', cursive;
+	color: #000;
+	padding-bottom: 20px;
+}
+
+.special-text {
+	font: 300 32px/40px 'Arima Madurai', cursive;
+}
+
+small {
+	font-weight: 200;
+	font-size: 14px;
+}
+
+/* 
+---------------------------------------------
+Links
+---------------------------------------------
+*/
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a.selected, 
+a:hover {
+	color: #ea5480;
+}
+
+/* 
+---------------------------------------------
+Background colors
+---------------------------------------------
+*/
+
+.alt-bg {
+	background-color: #f7f7f7;
+}
+
+.focus-bg {
+	background-color: #ea5480;
+}
+
+.dark-bg {
+	background-color: #ea5480;
+}
+
+/* 
+---------------------------------------------
+Header
+---------------------------------------------
+*/
+
+nav {
+	padding-bottom: 30px;
+	float: left;
+	width: 85%;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+}
+
+nav a {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+nav .logo {
+	margin-bottom: -10px;
+	padding-left: 100px;
+}
+
+.bag {
+	padding-top: 55px;
+}
+
+.bag img {
+	margin-bottom: -5px;
+}
+
+/* 
+---------------------------------------------
+Footer
+---------------------------------------------
+*/
+
+footer {
+	padding: 50px 0 20px 0;
+	text-align: center;
+	color: #fff;
+}
+
+footer p {
+	padding: 30px 0;
+}
+
+footer .location1 {
+	float: left;
+	text-align: right;
+	width: 50%;
+	padding-right: 20px;
+	border-right: 0.5px solid #fff;
+}
+
+footer .location2 {
+	float: left;
+	text-align: left;
+	width: 50%;
+	padding-left: 20px;
+}
+
+footer .social-media {
+	clear: both;
+	padding: 40px 0 20px 0;
+}
+
+footer .social-media img {
+	margin: 0 30px;
+}
+
+/* 
+---------------------------------------------
+Home Page
+---------------------------------------------
+*/
+
+.home-hero {
+	background-image: url("../images/homehero.jpg");
+	height: 500px;
+	position: relative;
+}
+
+.home-hero p {
+	position: absolute;
+	top: 80px;
+	left: 800px;
+	font: 400 48px/60px 'Arima Madurai', cursive;
+	color: #fff;
+}
+
+.menu-teaser {
+	margin-top: -30px;
+	padding: 0 100px 80px 100px;
+}
+
+.menu-teaser p {
+	padding: 0 10px 20px 10px;
+}
+
+.menu-teaser a {
+	margin-left: 10px;
+}
+
+.donut-teaser {
+	padding-top: 70px;
+}
+
+.sandwich-teaser {
+	padding-top: 90px;
+}
+
+.coffee-teaser {
+	padding-left: 30px;
+}
+
+.catering-teaser {
+	padding-top: 40px;
+}
+
+.catering-teaser p {
+	padding-left: 425px;
+	padding-bottom: 50px;
+}
+
+.catering-teaser div {
+	text-align: center;
+}
+
+.catering-teaser p.promotion {
+	padding: 50px 0 30px 300px;
+	float: left;
+	width: 60%;
+}
+
+.catering-teaser a {
+	display: inline-block;
+	margin: 70px 50px 100px 50px;
+}
+
+
+/* 
+---------------------------------------------
+Catering Page
+---------------------------------------------
+*/
+
+.catering-hero {
+	background-image: url("../images/catering-hero.jpg");
+	height: 520px;
+}
+
+.catering h1{
+	padding: 40px 0;
+	text-align: center; 
+}
+
+.catering p {
+	padding: 50px 20px 200px 230px;
+}
+
+.events {
+	position: relative;
+}
+
+.dummy-event-box {
+	width: 270px;
+	height: 270px;
+	background-color: rgba(234,84,128,0.35);
+	position: absolute;
+}
+
+.dummy-event-box.first {
+	top: 30px;
+	left: 150px;
+}
+
+.dummy-event-box.second {
+	top: 10px;
+	left: 130px;
+}
+
+.event-box {
+	top: 30px;
+	left: 150px;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background-color: rgba(234,84,128,0.4);
+	position: absolute;
+	z-index: 1;
+}
+
+.event-box {
+	padding: 20px 20px;
+}
+
+.event-box p{
+	padding: 0 0 15px 0;
+}
+
+.gallery h1 {
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: -50px;
+}
+
+div.promotion {
+	padding: 50px;
+	text-align: center;
+}
+
+div.promotion p {
+	padding-bottom: 40px;
+}
+
+
+/* 
+---------------------------------------------
+Menu Page
+---------------------------------------------
+*/
+
+.menu-title {
+	background-color: #ea5480;
+	color: #fff;
+	font-size: 44px;
+	font-family: 'Arima Madurai', cursive;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.menu-title .title-desc {
+	text-align: left;
+	padding: 20px 320px 20px 380px;
+	font: 200 14px/18px 'Source Sans Pro', sans-serif;  
+}
+
+.menu-nav {
+	padding: 20px 0 20px 0;
+	text-align: center;
+}
+
+.menu-nav li {
+	display: inline-block;
+	text-align: center;
+	padding: 0 40px;
+	border-right: 1px solid #999;
+}
+
+.menu-nav li:nth-of-type(3) {
+	border: none;
+}
+
+.menu-nav a {
+	font-size: 16px;
+}
+
+.menu {
+	padding: 50px 100px;
+}
+
+.menu-item {
+	text-align: center; 
+	margin-bottom: 65px;
+	margin-top: 15px;
+}
+
+.menu-item h4 {
+	margin-top: 10px;
+}
+
+.menu-item p {
+	text-align: left;
+	font-size: 16px;
+	padding-left: 75px;
+	padding-right: 40px;
+
+}
+
+.menu-item .price {
+	float: left;
+	font-weight: 400;
+	padding-top: 24px;
+	padding-left: 100px;
+	text-align: right;
+}
+
+.menu-item a {
+	display: inline-block;
+	margin-top: 22px;
+	margin-right: 80px;
+	letter-spacing: 1px;
+	padding: 3px 15px;
+}
+
+#sandwiches,
+#drinks
+ {
+	display: none;
+}
+
+
+
+/* 
+---------------------------------------------
+Menu Detail Page
+---------------------------------------------
+*/
+
+.menu-nav.alt-color li {
+	border-right: 1px solid #fff;
+}
+
+.menu-nav.alt-color li:nth-of-type(3) {
+	border: none;
+}
+
+.menu-nav.alt-color a {
+	color: #fff;
+	font-weight: 300;
+}
+
+.detail a:hover {
+	font-weight: 400;
+}
+
+.menu-display {
+	padding-bottom: 40px;
+}
+
+.menu-display img {
+	float: left;
+	padding: 100px 0 0 200px;
+}
+
+.menu-desc {
+	float: right;
+	width: 50%;
+	padding: 80px 150px 40px 20px;
+}
+
+.menu-desc h1 {
+	text-align: left;
+	padding-left: 0;
+}
+
+.menu-desc .price {
+	padding: 20px 0 20px 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.menu-desc li {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 0 10px 0 10px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+.menu-desc li#quantity {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	background-color: lightgray;
+}
+
+#quantity-label {
+	float: left;
+	width: 20%;
+}
+
+.pair {
+	padding: 0 75px 30px 75px;
+}
+
+.pair h1 {
+	padding: 40px 0;
+} 
+
+/* 
+---------------------------------------------
+About Page
+---------------------------------------------
+*/
+
+#about-hero {
+	background-image: url('../images/abouthero.jpg');
+	height: 515px;
+}
+
+.about-us {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about-us span {
+	color: #ea5480;
+	font-size: 28px;
+	font-weight: 300;
+	font-family: 'Arima Madurai', cursive;
+}
+
+.about-us p {
+	padding: 20px 350px 20px 350px;
+}
+
+.about-us a {
+	padding-left: 350px;
+	font: 400 18px/24px 'Source Sans Pro', sans-serif;
+	color: #ea5480;
+}
+
+.about-us .focus {
+	font: 400 36px/48px 'Arima Madurai', cursive;
+	color: #ea5480;
+	padding: 10px 200px;
+}
+
+#bio {
+	padding: 40px 40px;
+}
+
+#bio li.column {
+	padding-left: 150px;
+	float: left;
+}
+
+.chef h3,
+.chef h5 {
+	text-align: center;
+}
+
+.chef h5 {
+	margin-bottom: 20px;
+}
+
+.chef li {
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+.chef div {
+	float: left;
+	width: 65%;
+}
+
+.chef div.option {
+	width: 35%;
+	font-weight: 400;
+}
+
+
+/* 
+---------------------------------------------
+Contact Page
+---------------------------------------------
+*/
+
+#map {
+	height: 400px;
+}
+
+.contact {
+	padding: 50px 250px;
+}
+
+.address {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: left;
+}
+
+.address p {
+	padding-bottom: 8px;
+	padding-left: 10px;
+}
+
+.address:nth-of-type(1) {
+	border-right: 0.5px solid lightgray;
+}
+
+.contact-form {
+	padding-bottom: 80px;
+}
+
+.contact-form p {
+	padding-bottom: 50px;
+}
+
+.contact-form input, textarea {
+	border: none;
+	border-bottom: solid 1px #ea5480;;
+	background-color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 500px;
+	margin-bottom: 25px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
